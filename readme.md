@@ -5,6 +5,13 @@ This project is a **Streamlit-based web application** that classifies car damage
 ---
 
 ## 📁 Project Structure
+streamlit_app/
+├── app.py # Main Streamlit application
+├── model_helper.py # Contains model loading and prediction functions
+├── model/ # Directory containing the saved PyTorch model
+├── requirements.txt # Python dependencies
+├── .gitignore # Files and folders ignored by Git
+└── readme.md # Project documentation (this file)
 
 
 
@@ -34,6 +41,9 @@ The model classifies images into the following 6 categories:
 ---
 
 ## 🚀 How to Run
+```bash
+streamlit run app.py
+```
 
 ### 🔧 Setup
 
@@ -41,3 +51,10 @@ Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
+
+```
+## Requirements
+streamlit==1.42.2
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+Pillow==11.3.0
